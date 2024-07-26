@@ -13,7 +13,9 @@ class TuneItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: GestureDetector(
-        onTap: tune.playsound,
+        onTap: () {
+          tune.playsound();
+        },
         child: Container(
           color: tune.color,
         ),
